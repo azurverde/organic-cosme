@@ -1,0 +1,491 @@
+/* 基本
+==================================================================*/
+*{
+	margin:0;
+	padding:0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
+
+body{
+	background-color:#ffffff;
+	margin:0 auto;
+	font-size:0.9em;
+	font-family:'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	color:#363535;
+	-webkit-text-size-adjust:100%;
+}
+
+img{
+	border:0;
+	vertical-align:bottom;
+}
+
+ul{
+	list-style-type:none;
+}
+
+/*-- clearfix --*/
+.clearfix:after{
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	line-height:0;
+	font-size: 0;
+	visibility: hidden;
+}
+
+.clearfix{
+	display:inline-block;
+	zoom:1;
+}
+
+.clearfix{
+	display:block;
+}
+
+
+
+/* layout
+==================================================================*/
+#wrap{
+	width:700px;
+	margin:0 auto;
+	position:relative;
+}
+
+a{
+	color:#363535;
+	margin:0;
+}
+
+a:hover{
+	color:#92d701;
+	text-decoration:none;
+}
+
+.redTxt{
+	color:#ff0000;
+}
+
+.blueTxt{
+	color:#0099cc;
+}
+
+.underlineTxt{
+	padding:0 0 2px 0;
+	border-bottom:2px solid #ffff00;
+	line-height:210%;
+}
+
+.bTxt{
+	font-weight:bold;
+}
+
+
+
+/* header
+==================================================================*/
+#header{
+	width:100%;
+	text-align:left;
+	font-weight:bold;
+	padding:10px 0;
+	border-bottom:1px solid #e3e3e3;
+}
+
+
+
+/* header下部
+==================================================================*/
+/* パンくずリスト
+----------------------------------------*/
+#breadlistBox{
+	width:96%;
+	margin:10px auto;
+	padding:0 5px;
+	box-sizing:border-box;
+	font-size:0.9em;
+	line-height:180%;
+}
+
+
+
+/* 日付とSNS
+----------------------------------------*/
+#dateSnsBox{
+	width:96%;
+	margin:20px auto;
+	box-sizing:border-box;
+	font-size:1em;
+	border-bottom:1px solid #e3e3e3;
+}
+
+#dateBox{
+	width:100%;
+	text-align:left;
+	font-weight:bold;
+	margin:0 5px;
+}
+
+#dateBox .update{
+	margin:0 10px 0 0;
+	color:#ffffff;
+	background-color:#407215;
+	padding:4px 8px;
+	box-sizing:border-box;
+}
+
+
+#snsBox{
+	width:100%;
+	text-align:left;
+	margin:10px 0 0 0;
+}
+
+.twitterBox,
+.fbBox,
+.lineBox,
+.hatenaBox,
+.googleBox{
+	display:inline-block;
+	vertical-align:top;
+	margin:2px 3px;
+}
+
+
+
+/* contents
+==================================================================*/
+#contents{
+	width:100%;
+	margin:20px auto 0 auto;
+	padding:0 2%;
+	box-sizing:border-box;
+	line-height:210%;
+}
+
+#contents h2{
+	font-size:2em;
+	line-height:150%;
+	margin:5% auto;
+	font-weight:bold;
+	font-family:游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.itemBox{
+	width:100%;
+	margin:60px auto;
+	font-size:1.15em;
+}
+
+.itemBox h3{
+	margin:10px 0 15px 0;
+	padding:7px 0;
+	font-size:1.45em;
+	line-height:150%;
+	font-weight:bold;
+	border-bottom:2px dotted #407215;
+	font-family:游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.itemBox h4{
+	margin:20px 0;
+	padding:20px 5px;
+	font-size:1.35em;
+	font-weight:bold;
+	text-align:center;
+	border-top:1px solid #6fb335;
+	border-bottom:4px double #407215;
+	box-sizing:border-box;
+}
+
+.itemBox h5{
+	margin:20px 0 10px 0;
+	padding:8px 3px;
+	font-size:1.3em;
+	font-weight:bold;
+	border-bottom:1px solid #bfbfbf;
+	box-sizing:border-box;
+}
+
+.h5Later{
+	margin:50px 0 10px 0 !important;
+}
+
+.itemBox p{
+	margin:0 0 10px 0;
+}
+
+.itemBox p:last-child{
+	margin:0;
+}
+
+.squareBox{
+	width:96%;
+	margin:20px auto;
+	padding:20px;
+	box-sizing:border-box;
+	border:2px solid #6fb335;
+}
+
+.squareImgBox img{
+	width:100%;
+	height:auto;
+	margin:5px 0;
+}
+
+.squareBox h6{
+	font-size:1.15em;
+	color:#407215;
+	margin:0 0 10px 0;
+	padding:0 0 5px 0;
+	font-weight:bold;
+	text-align:center;
+	border-bottom:1px dashed #407215;
+	box-sizing:border-box;
+}
+
+
+
+/* 写真
+----------------------------------------*/
+.photoBox{
+	margin:20px 0;
+}
+
+.photoBox img{
+	width:100%;
+	height:auto;
+}
+
+
+
+/* 受け答え風
+----------------------------------------*/
+.voiceBox{
+	font-size:1.15em;
+	margin:20px auto 0 auto;
+}
+
+.voiceA{
+	font-weight:bold;
+	width:90%;
+	color:#cc3399;
+	margin:30px auto;
+	font-size:0.95em;
+}
+
+
+
+/* プロフィール
+----------------------------------------*/
+.profBox{
+	width:100%;
+	margin:40px auto 5px auto;
+	padding:2% 3% 3% 3%;
+	display:table;
+	border:2px solid #407215;
+	box-sizing:border-box;
+	border-radius:15px;
+}
+
+.profPhotoBox{
+	width:30%;
+	text-align:center;
+	vertical-align:middle;
+	display:table-cell;
+	box-sizing:border-box;
+}
+
+.profPhotoBox img{
+	width:100%;
+	height:auto;
+}
+
+.profTxtBox{
+	width:70%;
+	padding:0 0 0 4%;
+	text-align:left;
+	vertical-align:middle;
+	display:table-cell;
+	box-sizing:border-box;
+	color:#407215;
+	line-height:180%;
+}
+
+.profName{
+	color:#000000;
+	font-weight:bold;
+	font-size:1.4em;
+	border-bottom:2px dotted #407215;
+	margin:0 0 8px 0;
+	padding:0 0 5px 0;
+}
+
+.profLinkBox{
+	width:100%;
+	color:#407215;
+	font-size:0.9em;
+	text-align:center;
+}
+
+.profLinkBox a{
+	color:#407215;
+}
+
+
+
+/* メニュー
+----------------------------------------*/
+.naviBox{
+	margin:80px auto;
+	font-size:1.15em;
+}
+
+.naviTitle{
+	color:#ffffff;
+	background-color:#407215;
+	margin:0 0 10px 0;
+	padding:10px 20px;
+	font-size:1.4em;
+	font-weight:bold;
+	box-sizing:border-box;
+	text-align:center;
+}
+
+.naviTitle p{
+	padding:0 10px;
+	border-left:4px double #ffffff;
+	border-right:4px double #ffffff;
+	box-sizing:border-box;
+}
+
+.naviBox ul{
+	width:94%;
+	margin:0 auto;
+}
+
+.naviBox li{
+	text-indent:-1em;
+	margin:15px 0 15px 1em;
+	font-size:1em;
+}
+
+.naviBox li:before{
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin:0 3px;
+	border:transparent solid 5px;
+	border-left-color:#cc3399;
+}
+
+.naviBox li a{
+	text-decoration:none;
+	border-bottom:1px dotted #407215;
+}
+
+
+
+/* カート周り
+----------------------------------------*/
+.osusumeBox{
+	margin:20px 0 0 0;
+}
+
+.linkBox{
+	text-align:center;
+	font-size:1.1em;
+}
+
+.hanaCartBox,
+.welinaCartBox{
+	margin:0 0 40px 0;
+}
+
+
+
+/* 運営者情報
+----------------------------------------*/
+.companyLink{
+	font-size:0.8em;
+	padding:0 0 5px 0;
+	text-align:center;
+}
+
+
+
+/* pagetop
+----------------------------------------*/
+.pageTop{
+	display:none;
+	margin:0;
+	padding:0;
+}
+
+#moveiconBox{
+	margin:0;
+	padding:0;
+	position:fixed;
+	right:15px;
+	bottom:15px;
+	cursor:pointer;
+}
+
+#moveiconBox a{
+	display:block;
+	z-index:999;
+	padding:8px 0 0 8px;
+	border-radius: 30px;
+	width:35px;
+	height:35px;
+	background-color:#000000;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+}
+
+.move-page-top{
+	position:relative;
+	display:inline-block;
+	padding-left:20px;
+}
+
+.move-page-top::before{
+	content: '';
+	width:8px;
+	height:8px;
+	border:0;
+	border-top:solid 2px #ffffff;
+	border-left:solid 2px #ffffff;
+	-ms-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	transform:rotate(45deg);
+	position:absolute;
+	top:50%;
+	left:0;
+	right:0;
+	margin:-5px auto 0 auto;
+}
